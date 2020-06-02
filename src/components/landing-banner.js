@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 
 const Landing = () => (
   <div>
-    <section class="hero is-primary is-medium">
-      <div class="hero-body">
-        <div class="container">
+    <section className="hero is-primary is-medium">
+      <div className="hero-body">
+        <div className="container">
           <SEO title="Home" />
           <div className="columns is-gapless">
             <div className="column is-6">

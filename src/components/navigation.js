@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Navigation = () => (
   <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -17,7 +18,7 @@ const Navigation = () => (
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item">
-        Shop
+        <Link to="/candles">Shop</Link>
       </a>
 
       <a class="navbar-item">

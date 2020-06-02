@@ -7,6 +7,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Navigation from "../components/navigation"
 import Landing from "../components/landing-banner"
+import CandlePage from "../pages/candles"
 
 const IndexPage = () => (
   <div>
