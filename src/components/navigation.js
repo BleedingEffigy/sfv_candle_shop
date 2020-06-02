@@ -24,18 +24,13 @@ const Navigation = () => (
       <a class="navbar-item">
         Contact
       </a>
-
-      <a class="navbar-item">
-        Cart
-      </a>
-
     </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary">
-            <strong>Sign up</strong>
+            Cart
           </a>
           <a class="button is-light">
             Log in
