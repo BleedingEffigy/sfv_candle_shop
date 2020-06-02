@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Navigation from "../components/navigation"
+import ShopBanner from "../components/shop-banner"
+
 const CandlePage = () => (
   <div>
-    <section className="hero is-primary">
-
-    </section>
+    <Navigation/>
+    <ShopBanner/>
   </div>
 )
 
