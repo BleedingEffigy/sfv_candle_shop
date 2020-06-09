@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const ItemCard = () => (
     <div className="card">
-      <Link to="/">
+      <Link to="/CandleDetail">
         <div className="card-image">
           <figure className="image">
             <img src="https://bulma.io/images/placeholders/1280x960.png"></img>
