@@ -30,7 +30,7 @@ const Navigation = () => (
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary">
-            Cart
+            <Link to="/cart">Cart</Link>
           </a>
           <a class="button is-light">
             Log in
