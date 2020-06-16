@@ -1,5 +1,6 @@
 import React from "react"
 import Navigation from "../components/navigation"
+import CartTotal from "../components/cart-total"
 
 const CartPage = () => (
   <div>
@@ -13,7 +14,7 @@ const CartPage = () => (
               <div className="column is-offset-2">
                 <p>PRODUCT</p>
               </div>
-              <div className="column is-offset-6">
+              <div className="column is-offset-5">
                 <p>PRICE</p>
               </div>
               <div className="column">
@@ -23,10 +24,6 @@ const CartPage = () => (
                 <p>SUBTOTAL</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="columns">
-          <div className="column is-8">
             <div className="columns is-vcentered">
               <div className="column">
                 <figure className="image is-128x128">
@@ -36,7 +33,7 @@ const CartPage = () => (
               <div className="column">
                 <p>PRODUCT</p>
               </div>
-              <div className="column is-offset-6">
+              <div className="column is-offset-5">
                 <p>PRICE</p>
               </div>
               <div className="column">
@@ -56,7 +53,7 @@ const CartPage = () => (
               <div className="column">
                 <p>PRODUCT</p>
               </div>
-              <div className="column is-offset-6">
+              <div className="column is-offset-5">
                 <p>PRICE</p>
               </div>
               <div className="column">
@@ -66,6 +63,10 @@ const CartPage = () => (
                 <p>SUBTOTAL</p>
               </div>
             </div>
+          </div>
+
+          <div className="column is-4">
+            <CartTotal/>
           </div>
         </div>
       </div>
