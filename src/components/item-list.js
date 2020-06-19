@@ -7,9 +7,9 @@ class ItemList extends React.Component{
     this.state = {
       items: {
         "one": {"shape":"square","color":"green"},
-        "two": {"shape":"square","color":"green"},
-        "three": {"shape":"square","color":"green"},
-        "four": {"shape":"square","color":"green"},
+        "two": {"shape":"etched stripes","color":"green"},
+        "three": {"shape":"pyramid","color":"green"},
+        "four": {"shape":"round","color":"green"},
         "five": {"shape":"square","color":"green"},
       }
     }
@@ -18,8 +18,8 @@ class ItemList extends React.Component{
   render(){
     return (
       <div className="columns is-multiline">
-        {Object.entries(this.state.items).map((key, item) =>
-          <div className="column is-4" key={key}><ItemCard shape={item.shape}/></div>
+        {Object.entries(this.state.items).map(([key, item]) =>
+          <div className="column is-4" key={key}><ItemCard shape={item.shape} color={item.color}/></div>
         )}
       </div>)
   }
