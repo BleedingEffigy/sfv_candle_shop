@@ -1,12 +1,28 @@
 import React from "react"
 import { Link } from "gatsby"
 
+const renderColorImage = (props) => {
+  switch(props){
+    case "red":
+      return "https://via.placeholder.com/1280x960/bf0e44/000000.png"
+    case "violet":
+      return "https://via.placeholder.com/1280x960/b74bdd/000000.png"
+    case "blue":
+      return "https://via.placeholder.com/1280x960/223ed2/000000.png"
+    case "yellow":
+      return "https://via.placeholder.com/1280x960/ebe958/000000.png"
+    default:
+      return "https://bulma.io/images/placeholders/1280x960.png"
+
+  }
+}
+
 const ItemCard = (props) => (
     <div className="card">
       <Link to="/CandleDetail">
         <div className="card-image">
           <figure className="image">
-            <img src="https://bulma.io/images/placeholders/1280x960.png"></img>
+            <img src={renderColorImage(props.color)}></img>
           </figure>
         </div>
       </Link>
