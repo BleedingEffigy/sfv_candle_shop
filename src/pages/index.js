@@ -6,10 +6,15 @@ import SEO from "../components/seo"
 import Navigation from "../components/navigation"
 import Landing from "../components/landing-banner"
 
+import store from "../js/store/index"
+import { Provider } from "react-redux"
+
 const IndexPage = () => (
   <div>
-    <Navigation/>
-    <Landing/>
+    <Provider store={store}>
+      <Navigation/>
+      <Landing/>
+    </Provider>
 </div>
 )
 
