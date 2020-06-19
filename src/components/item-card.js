@@ -14,16 +14,16 @@ const ItemCard = (props) => (
         <p>10in {props.shape} candle</p>
         <div className="field is-grouped">
           <p className="control">
-            <button className="button is-rounded is-small" style={{backgroundColor: "rgb(191, 14, 68)"}}></button>
+            <button className="button is-rounded is-small" style={{backgroundColor: "#bf0e44"}}></button>
           </p>
           <p className="control">
-            <button className="button is-rounded is-small" style={{backgroundColor: "rgb(183, 75, 221)"}}></button>
+            <button className="button is-rounded is-small" style={{backgroundColor: "#b74bdd"}}></button>
           </p>
           <p className="control">
-            <button className="button is-rounded is-small" style={{backgroundColor: "rgb(34, 62, 210)"}}></button>
+            <button className="button is-rounded is-small" style={{backgroundColor: "#223ed2"}}></button>
           </p>
           <p className="control">
-            <button className="button is-rounded is-small" style={{backgroundColor: "rgb(235, 233, 88)"}}></button>
+            <button className="button is-rounded is-small" style={{backgroundColor: "#ebe958"}}></button>
           </p>
         </div>
         <p className="has-text-weight-bold">$10.99</p>
