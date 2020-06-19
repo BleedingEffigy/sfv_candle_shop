@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const ItemCard = () => (
+const ItemCard = (props) => (
     <div className="card">
       <Link to="/CandleDetail">
         <div className="card-image">
@@ -11,7 +11,7 @@ const ItemCard = () => (
         </div>
       </Link>
       <div className="card-content">
-        <p>10in star candle</p>
+        <p>10in {props.shape} candle</p>
         <div className="field is-grouped">
           <p className="control">
             <button className="button is-rounded is-success is-small"></button>
