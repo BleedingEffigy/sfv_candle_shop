@@ -6,11 +6,11 @@ class ItemList extends React.Component{
     super(props)
     this.state = {
       items: {
-        "one": {"shape":"square","color":"green"},
-        "two": {"shape":"etched stripes","color":"green"},
-        "three": {"shape":"pyramid","color":"green"},
+        "one": {"shape":"square","color":"red"},
+        "two": {"shape":"etched stripes","color":"violet"},
+        "three": {"shape":"pyramid","color":"yellow"},
         "four": {"shape":"round","color":"green"},
-        "five": {"shape":"square","color":"green"},
+        "five": {"shape":"square","color":"blue"},
       }
     }
   }
