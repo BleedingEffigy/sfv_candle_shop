@@ -22,18 +22,18 @@ const DetailPage = () => (
             <br/>
             <div className="field is-grouped">
               <p className="has-text-weight-bold">Color: &nbsp;</p>
-              <p className="control">
-                <button className="button is-rounded is-success is-small"></button>
-              </p>
-              <p className="control">
-                <button className="button is-rounded is-success is-small"></button>
-              </p>
-              <p className="control">
-                <button className="button is-rounded is-success is-small"></button>
-              </p>
-              <p className="control">
-                <button className="button is-rounded is-success is-small"></button>
-              </p>
+                <p className="control">
+                  <button className="button is-rounded is-small" style={{backgroundColor: "rgb(191, 14, 68)"}}></button>
+                </p>
+                <p className="control">
+                  <button className="button is-rounded is-small" style={{backgroundColor: "rgb(183, 75, 221)"}}></button>
+                </p>
+                <p className="control">
+                  <button className="button is-rounded is-small" style={{backgroundColor: "rgb(34, 62, 210)"}}></button>
+                </p>
+                <p className="control">
+                  <button className="button is-rounded is-small" style={{backgroundColor: "rgb(235, 233, 88)"}}></button>
+                </p>
             </div>
             <p>In stock</p>
             <br/>
