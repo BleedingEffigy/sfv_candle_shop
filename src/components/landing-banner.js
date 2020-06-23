@@ -16,8 +16,8 @@ const Landing = () => (
             </div>
             <div className="column is-6 is-flex">
               <div className="content notification is-white">
-                <h2 className="title is-2 has-text-dark">The title 2 heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                <h2 className="title is-2 has-text-dark">Made right in the SFV</h2>
+                <p>All our free standing candles are made in our home in the beautiful San Fernando Valley</p>
               </div>
             </div>
           </div>
@@ -25,8 +25,8 @@ const Landing = () => (
           <div className="columns is-gapless">
             <div className="column is-6 is-flex">
               <div className="content notification is-white">
-                <h2 className="title is-2 has-text-dark">The title 2 heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                <h2 className="title is-2 has-text-dark">Choose from a combination of colors</h2>
+                <p>Mix colors to create a candle unique to you</p>
               </div>
             </div>
             <div className="column is-6">
