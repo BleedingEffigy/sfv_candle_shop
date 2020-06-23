@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Navigation = () => (
-  <nav className="navbar" role="navigation" aria-label="main navigation">
+  <nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
     <a className="navbar-item" href="/">
       <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
