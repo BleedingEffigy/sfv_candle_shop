@@ -32,12 +32,12 @@ class ConnectedItemCard extends React.Component{
     this.handleColorClick = this.handleColorClick.bind(this)
   }
 
-  handleColorClick = (props) => {
-    const color = {
-      "index":"one",
-      "color": "violet"
+  handleColorClick = (props, index, new_color) => {
+    const candle_color = {
+      "index":index,
+      "color": new_color
     }
-    props.changeCandleColor(color)
+    props.changeCandleColor(candle_color)
   }
 
   render(){
@@ -54,16 +54,24 @@ class ConnectedItemCard extends React.Component{
           <p>10in {this.props.shape} candle</p>
           <div className="field is-grouped">
             <p className="control">
-              <button className="button is-rounded is-small" style={{backgroundColor: "#bf0e44"}} onClick={this.handleColorClick.bind(this, this.props)}></button>
+              <button className="button is-rounded is-small"
+                style={{backgroundColor: "#bf0e44"}}
+                onClick={this.handleColorClick.bind(this, this.props, this.props.index, "red")}></button>
             </p>
             <p className="control">
-              <button className="button is-rounded is-small" style={{backgroundColor: "#b74bdd"}}></button>
+              <button className="button is-rounded is-small"
+                style={{backgroundColor: "#b74bdd"}}
+                onClick={this.handleColorClick.bind(this, this.props, this.props.index, "violet")}></button>
             </p>
             <p className="control">
-              <button className="button is-rounded is-small" style={{backgroundColor: "#223ed2"}}></button>
+              <button className="button is-rounded is-small"
+                style={{backgroundColor: "#223ed2"}}
+                onClick={this.handleColorClick.bind(this, this.props, this.props.index, "blue")}></button>
             </p>
             <p className="control">
-              <button className="button is-rounded is-small" style={{backgroundColor: "#ebe958"}}></button>
+              <button className="button is-rounded is-small"
+                style={{backgroundColor: "#ebe958"}}
+                onClick={this.handleColorClick.bind(this, this.props, this.props.index, "yellow")}></button>
             </p>
           </div>
           <p className="has-text-weight-bold">$10.99</p>
