@@ -11,7 +11,7 @@ const Landing = () => (
           <div className="columns is-gapless">
             <div className="column is-6">
               <figure className="image is-3by2">
-                <img src="https://bulma.io/images/placeholders/800x480.png"></img>
+                <img src="https://cdn18.picryl.com/photo/2019/10/07/san-fernando-valley-california-e90e48-1024.jpg"></img>
               </figure>
             </div>
             <div className="column is-6 is-flex">
@@ -31,7 +31,7 @@ const Landing = () => (
             </div>
             <div className="column is-6">
               <figure className="image is-3by2">
-                <img src="https://bulma.io/images/placeholders/800x480.png"></img>
+                <img src="https://image.exportimes.com/UploadFile/UploadImg/2017/12/7/201712071031273727.jpg"></img>
               </figure>
             </div>
           </div>
