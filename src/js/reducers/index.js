@@ -13,7 +13,8 @@ const initialState = {
 function rootReducer(state = initialState, action) {
   switch(action.type){
     case CHANGE_CANDLE_COLOR:
-      const new_colors = Object.assign({}, state.candle_colors, action.payload)
+      const new_colors = Object.assign({}, state.candle_colors)
+      new_colors[action.payload.index]["color"] = action.payload.color
       return Object.assign({}, state, {
         candle_colors: new_colors
       })
