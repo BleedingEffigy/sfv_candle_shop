@@ -29,7 +29,7 @@ class ConnectedItemCard extends React.Component{
   render(){
     return (
       <div className="card has-background-white-bis">
-        <Link to="/CandleDetail">
+        <Link to={"/detail/"+this.props.shape+"-candle"}>
           <div className="card-image">
             <figure className="image">
               <img src={renderColorImage(this.props.color)}></img>

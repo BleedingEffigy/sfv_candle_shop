@@ -3,7 +3,7 @@ import {CHANGE_CANDLE_COLOR} from "../actions/index.js"
 const initialState = {
   candle_colors: {
     "one": {"shape":"square","color":"red"},
-    "two": {"shape":"etched stripes","color":"violet"},
+    "two": {"shape":"etched-stripes","color":"violet"},
     "three": {"shape":"pyramid","color":"yellow"},
     "four": {"shape":"round","color":"green"},
     "five": {"shape":"square","color":"blue"},
