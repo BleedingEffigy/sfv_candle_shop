@@ -17,9 +17,7 @@ const Navigation = () => (
 
   <div id="navbarBasicExample" className="navbar-menu">
     <div className="navbar-start">
-      <a className="navbar-item">
-        <Link to="/candles">Shop</Link>
-      </a>
+        <Link to="/candles" className="navbar-item">Shop</Link>
 
       <a className="navbar-item">
         Contact
@@ -29,9 +27,7 @@ const Navigation = () => (
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons">
-          <a className="button is-primary">
-            <Link to="/cart">Cart</Link>
-          </a>
+            <Link to="/cart" className="button is-primary">Cart</Link>
           <a className="button is-light">
             Log in
           </a>
