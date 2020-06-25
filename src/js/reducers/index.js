@@ -7,6 +7,13 @@ const initialState = {
     "three": {"shape":"pyramid","color":"yellow"},
     "four": {"shape":"round","color":"green"},
     "five": {"shape":"square","color":"blue"},
+  },
+  cart: {
+    "PC01-R": {
+      "shape":"square",
+      "color":"blue",
+      "quantity": 2,
+    }
   }
 }
 
