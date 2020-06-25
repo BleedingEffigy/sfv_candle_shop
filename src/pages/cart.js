@@ -40,9 +40,9 @@ const ConnectedCartPage = ({cart}) => (
                         <img src="https://bulma.io/images/placeholders/1280x960.png"></img>
                       </figure>
                     </td>
-                    <td style={{verticalAlign: "middle"}}>PRODUCT</td>
+                    <td style={{verticalAlign: "middle"}}>{val.shape+" "+val.color}</td>
                     <td style={{verticalAlign: "middle"}}>PRICE</td>
-                    <td style={{verticalAlign: "middle"}}>QUANTITY</td>
+                    <td style={{verticalAlign: "middle"}}>{val.quantity}</td>
                     <td style={{verticalAlign: "middle"}}>SUBTOTAL</td>
                   </tr>
                 )}
