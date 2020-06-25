@@ -21,15 +21,14 @@ function rootReducer(state = initialState, action) {
       })
       break
     case ADD_TO_CART:
-    const SKU = Object.keys(action.payload)[0]
-    var new_cart
-    if (SKU in state.cart){
-      let updated_item = Object.assign({}, action.payload[SKU], {quantity: ++state.cart[SKU].quantity})
-      console.log(updated_item)
-      new_cart = Object.assign({}, state.cart, {[SKU]: updated_item})
-    }else{
-      new_cart =  Object.assign({}, state.cart, action.payload)
-    }
+      const SKU = Object.keys(action.payload)[0]
+      var new_cart
+      if (SKU in state.cart){
+        let updated_item = Object.assign({}, action.payload[SKU], {quantity: ++state.cart[SKU].quantity})
+        new_cart = Object.assign({}, state.cart, {[SKU]: updated_item})
+      }else{
+        new_cart =  Object.assign({}, state.cart, action.payload)
+      }
       return Object.assign({}, state, {
         cart: new_cart
       })
