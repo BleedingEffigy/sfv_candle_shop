@@ -8,13 +8,7 @@ const initialState = {
     "four": {"shape":"round","color":"green"},
     "five": {"shape":"square","color":"blue"},
   },
-  cart: {
-    "PC01-R": {
-      "shape":"Square",
-      "color":"blue",
-      "quantity": 2,
-    }
-  }
+  cart: {}
 }
 
 function rootReducer(state = initialState, action) {
