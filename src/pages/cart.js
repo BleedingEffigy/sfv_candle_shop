@@ -41,9 +41,9 @@ const ConnectedCartPage = ({cart}) => (
                       </figure>
                     </td>
                     <td style={{verticalAlign: "middle"}}>{val.shape+" "+val.color}</td>
-                    <td style={{verticalAlign: "middle"}}>PRICE</td>
+                    <td style={{verticalAlign: "middle"}}>$8.99</td>
                     <td style={{verticalAlign: "middle"}}>{val.quantity}</td>
-                    <td style={{verticalAlign: "middle"}}>SUBTOTAL</td>
+                    <td style={{verticalAlign: "middle"}}>${8.99*val.quantity}</td>
                   </tr>
                 )}
               </tbody>
