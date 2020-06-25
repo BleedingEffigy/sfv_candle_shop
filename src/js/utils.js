@@ -14,33 +14,34 @@ export const renderColorImage = (props) => {
 }
 
 export const createSKU = (shape, color) => {
-  const sku = "PC"
-  switch(shape){
+  let sku = "PC"
+
+  switch(shape.toLowerCase()){
     case "square":
-      sku.concat("01")
+      sku = sku.concat("01")
       break
     case "etched-stripes":
-      sku.concat("02")
+      sku = sku.concat("02")
       break
     case "pyramid":
-      sku.concat("03")
+      sku = sku.concat("03")
       break
     case "round":
-      sku.concat("04")
+      sku = sku.concat("04")
       break
   }
-  switch(color){
+  switch(color.toLowerCase()){
     case "red":
-      sku.concat("-R")
+      sku = sku.concat("-R")
       break
     case "violet":
-      sku.concat("-V")
+      sku = sku.concat("-V")
       break
     case "blue":
-      sku.concat("-B")
+      sku = sku.concat("-B")
       break
     case "yellow":
-      sku.concat("-Y")
+      sku = sku.concat("-Y")
       break
   }
   return sku
