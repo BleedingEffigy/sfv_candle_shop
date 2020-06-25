@@ -20,7 +20,7 @@ export const createSKU = (shape, color) => {
     case "square":
       sku = sku.concat("01")
       break
-    case "etched-stripes":
+    case "etched stripes":
       sku = sku.concat("02")
       break
     case "pyramid":
