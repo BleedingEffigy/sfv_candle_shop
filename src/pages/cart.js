@@ -34,7 +34,7 @@ const ConnectedCartPage = ({cart}) => (
               </thead>
               <tbody>
                 {Object.entries(cart).map(([key, val]) =>
-                  <tr>
+                  <tr key={key}>
                     <td>
                       <figure className="image is-128x128">
                         <img src="https://bulma.io/images/placeholders/1280x960.png"></img>

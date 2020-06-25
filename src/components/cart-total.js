@@ -12,7 +12,7 @@ const CartTotal = () => (
       <div className="column">
         <div className="control">
           <label className="radio box">
-            <input type="radio" name="shipping" checked/>Fast
+            <input type="radio" name="shipping" defaultChecked/>Fast
           </label>
           <label className="radio">
             <input type="radio" name="shipping"/>Standard
