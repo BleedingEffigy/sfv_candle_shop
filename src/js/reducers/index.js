@@ -1,4 +1,4 @@
-import {CHANGE_CANDLE_COLOR} from "../actions/index.js"
+import {CHANGE_CANDLE_COLOR, ADD_TO_CART} from "../actions/index.js"
 
 const initialState = {
   candle_colors: {
@@ -10,7 +10,7 @@ const initialState = {
   },
   cart: {
     "PC01-R": {
-      "shape":"square",
+      "shape":"Square",
       "color":"blue",
       "quantity": 2,
     }
@@ -24,6 +24,12 @@ function rootReducer(state = initialState, action) {
       new_colors[action.payload.index]["color"] = action.payload.color
       return Object.assign({}, state, {
         candle_colors: new_colors
+      })
+      break
+    case ADD_TO_CART:
+      const new_cart = Object.assign({}, state.cart, action.payload)
+      return Object.assign({}, state, {
+        cart: new_cart
       })
       break
   }
