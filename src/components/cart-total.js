@@ -22,7 +22,7 @@ const CartTotal = () => (
     </div>
     <br/>
     <p>Total</p>
-    <button className="button is-fullwidth">Proceed to checkout</button>
+    <button className="button is-fullwidth" disabled title="We are currently not processing any orders">Proceed to checkout</button>
   </div>
 )
 
