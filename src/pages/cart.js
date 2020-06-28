@@ -3,7 +3,7 @@ import Navigation from "../components/navigation"
 import CartTotal from "../components/cart-total"
 
 import { connect } from "react-redux"
-import {addToCart} from "../js/actions/index"
+import {addToCart, removeFromCart} from "../js/actions/index"
 import {createSKU} from "../js/utils"
 
 const select = state => {
@@ -12,11 +12,12 @@ const select = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    addToCart: cart => dispatch(addToCart(cart))
+    addToCart: item => dispatch(addToCart(item)),
+    removeFromCart: item => dispatch(removeFromCart(item))
   }
 }
 
-function ConnectedCartPage({cart, addToCart}){
+function ConnectedCartPage({cart, addToCart, removeFromCart}){
 
 const handleAddToCartClick = (item) => {
   const SKU = createSKU(item.shape, item.color)
@@ -28,6 +29,18 @@ const handleAddToCartClick = (item) => {
     }
   }
   addToCart(new_item)
+}
+
+const handleRemoveFromCartClick = (item) => {
+  const SKU = createSKU(item.shape, item.color)
+  const new_item = {
+    [SKU]: {
+      "shape": item.shape,
+      "color": item.color,
+      "quantity": 1,
+    }
+  }
+  removeFromCart(new_item)
 }
 
   return (
@@ -60,7 +73,8 @@ const handleAddToCartClick = (item) => {
                       <td style={{verticalAlign: "middle"}}>
                         <div className="field has-addons">
                           <p className="control">
-                            <button className="button">
+                            <button className="button"
+                                    onClick={() => handleRemoveFromCartClick(item)}>
                               <span>-</span>
                             </button>
                           </p>
