@@ -1,4 +1,4 @@
-import {CHANGE_CANDLE_COLOR, ADD_TO_CART} from "../actions/index.js"
+import {CHANGE_CANDLE_COLOR, ADD_TO_CART, REMOVE_FROM_CART} from "../actions/index.js"
 
 const initialState = {
   candle_colors: {
@@ -21,13 +21,28 @@ function rootReducer(state = initialState, action) {
       })
       break
     case ADD_TO_CART:
-      const SKU = Object.keys(action.payload)[0]
+      var SKU = Object.keys(action.payload)[0]
       var new_cart
       if (SKU in state.cart){
         let updated_item = Object.assign({}, action.payload[SKU], {quantity: ++state.cart[SKU].quantity})
         new_cart = Object.assign({}, state.cart, {[SKU]: updated_item})
       }else{
         new_cart =  Object.assign({}, state.cart, action.payload)
+      }
+      return Object.assign({}, state, {
+        cart: new_cart
+      })
+      break
+    case REMOVE_FROM_CART:
+      console.log(action.payload)
+      SKU = Object.keys(action.payload)[0]
+      var new_cart
+      if (state.cart[SKU].quantity > 1){
+        let updated_item = Object.assign({}, action.payload[SKU], {quantity: --state.cart[SKU].quantity})
+        new_cart = Object.assign({}, state.cart, {[SKU]: updated_item})
+      }else{
+        new_cart = Object.assign({}, state.cart)
+        delete new_cart[SKU]
       }
       return Object.assign({}, state, {
         cart: new_cart
