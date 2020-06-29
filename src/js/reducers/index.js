@@ -34,7 +34,6 @@ function rootReducer(state = initialState, action) {
       })
       break
     case REMOVE_FROM_CART:
-      console.log(action.payload)
       SKU = Object.keys(action.payload)[0]
       var new_cart
       if (state.cart[SKU].quantity > 1){
