@@ -46,3 +46,13 @@ export const createSKU = (shape, color) => {
   }
   return sku
 }
+
+export const sumQuantityPrice = (cart) => {
+  const cart_items = Object.values(cart)
+  let quantities = []
+  cart_items.map((item) => {
+    quantities.push(Object.values(item)[2])
+  })
+  let price = quantities.reduce((acc, curVal) => acc + curVal) * 8.99
+  return price
+}
