@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 const Landing = () => (
   <div>
-    <section className="hero is-primary is-medium">
+    <section className="hero is-primary is-fullheight">
       <div className="hero-body">
         <div className="container">
           <SEO title="Home" />

@@ -4,7 +4,7 @@ import CartTotal from "../components/cart-total"
 
 import { connect } from "react-redux"
 import {addToCart, removeFromCart} from "../js/actions/index"
-import {createSKU} from "../js/utils"
+import {renderColorImage ,createSKU} from "../js/utils"
 
 const select = state => {
   return { cart: state.cart}
@@ -65,7 +65,7 @@ const handleRemoveFromCartClick = (item) => {
                     <tr key={key}>
                       <td>
                         <figure className="image is-128x128">
-                          <img src="https://bulma.io/images/placeholders/1280x960.png"></img>
+                          <img src={renderColorImage(item.color)}></img>
                         </figure>
                       </td>
                       <td style={{verticalAlign: "middle"}}>10in. {item.color+" "+item.shape.toLowerCase()} candle</td>
