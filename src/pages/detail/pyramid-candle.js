@@ -2,11 +2,11 @@ import React from "react"
 
 import Navigation from "../../components/navigation"
 import CandleDetail from "../../components/candle-detail"
-import {renderColorImage} from "../../js/utils"
+import {renderImage} from "../../js/utils"
 
 
 const SquareCandlePage = () => (
-  <CandleDetail render={renderColorImage}
+  <CandleDetail render={renderImage}
                 shape={"Pyramid"}
                 description={"A pyramid that is 10in in height and 4in in width"}/>
 )

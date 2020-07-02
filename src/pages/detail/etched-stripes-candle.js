@@ -2,13 +2,13 @@ import React from "react"
 
 import Navigation from "../../components/navigation"
 import CandleDetail from "../../components/candle-detail"
-import {renderColorImage} from "../../js/utils"
+import {renderImage} from "../../js/utils"
 
 
 const SquareCandlePage = () => (
-  <CandleDetail render={renderColorImage}
-                shape={"Etched Stripes"}
-                description={"An striped pillar that is 10in in height and 4in in width"}/>
+  <CandleDetail render={renderImage}
+                shape={"Etched-Stripes"}
+                description={"A striped pillar that is 10in in height and 4in in width"}/>
 )
 
 export default SquareCandlePage
