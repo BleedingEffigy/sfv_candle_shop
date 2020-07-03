@@ -43,7 +43,7 @@ class ConnectedCandleDetail extends React.Component{
             <div className="column is-10">
               <div className="columns">
                 <div className="column is-5">
-                  <figure className="image">
+                  <figure className="image is-5by4">
                     <img src={this.props.render(this.props.shape.toLowerCase(), this.state.color)}></img>
                   </figure>
                 </div>

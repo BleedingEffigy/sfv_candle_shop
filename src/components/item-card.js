@@ -31,7 +31,7 @@ class ConnectedItemCard extends React.Component{
       <div className="card has-background-white-bis">
         <Link to={"/detail/"+this.props.shape+"-candle"}>
           <div className="card-image">
-            <figure className="image">
+            <figure className="image is-5by4">
               <img src={renderImage(this.props.shape, this.props.color)}></img>
             </figure>
           </div>
