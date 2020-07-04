@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Sylmar Candles`,
+    title: `SFV Candles`,
     description: `Candles made in Sylmar, California`,
     author: `@gatsbyjs`,
   },

@@ -8,10 +8,10 @@ import Landing from "../components/landing-banner"
 
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <Navigation/>
     <Landing/>
-</div>
+  </Layout>
 )
 
 export default IndexPage
