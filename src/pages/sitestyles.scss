@@ -1,4 +1,28 @@
 @charset "utf-8";
 // If need, change your variables before importing Bulma
-$title-color: #ff0000;
+//$title-color: #ff0000;
+// import the two below to work with bulmas initial variables and functions
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+$primary: #a16fea;
+$logo: #f4f4f4;
+$body-background-color: hsl(263, 76%, 93%);
+
+//import the bottom to alter the $colors map
+@import "~bulma/sass/utilities/derived-variables";
+
+$light-green: #8CC25C;
+$light-green-invert: findColorInvert($light-green);
+$ice: #87C0B8;
+$ice-invert: findColorInvert($ice);
+$addColors: (
+  "light-green":($light-green, $light-green-invert),
+  "wine": ($ice, $ice-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+.logo {
+  color: #f4f4f4;
+}
+
 @import "~bulma/bulma.sass";
