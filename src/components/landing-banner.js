@@ -15,16 +15,19 @@ const Landing = () => (
               </figure>
             </div>
             <div className="column is-6 is-flex">
-              <div className="content notification is-white">
+              <div className="content notification is-light-green">
                 <h2 className="title is-2 has-text-dark">Made right in the SFV</h2>
                 <p>All our free standing candles are made in our home in the beautiful San Fernando Valley</p>
+                <Link to="/candles">
+                  <button className="button is-dark">Browse</button>
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="columns is-gapless">
             <div className="column is-6 is-flex">
-              <div className="content notification is-white">
+              <div className="content notification is-wine">
                 <h2 className="title is-2 has-text-dark">Choose from a combination of colors</h2>
                 <p>Mix colors to create a candle unique to you</p>
               </div>
