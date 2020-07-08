@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 import { connect } from "react-redux"
 import {addToCart, removeFromCart} from "../js/actions/index"
-import {renderImage ,createSKU} from "../js/utils"
+import {createSKU} from "../js/utils"
 import { FaShoppingBag } from "react-icons/fa";
 
 const select = state => {
@@ -77,7 +77,7 @@ const handleRemoveFromCartClick = (item) => {
                         <tr key={key}>
                           <td>
                             <figure className="image is-128x128">
-                              <img src={renderImage(item.shape.toLowerCase(), item.color)}></img>
+                              <img src={require(`../images/${item.color}_${item.shape.toLowerCase()}_candle.jpg`)}></img>
                             </figure>
                           </td>
                           <td style={{verticalAlign: "middle"}}>10in. {item.color+" "+item.shape.toLowerCase()} candle</td>

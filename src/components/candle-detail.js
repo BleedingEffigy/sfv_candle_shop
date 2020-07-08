@@ -44,7 +44,7 @@ class ConnectedCandleDetail extends React.Component{
               <div className="columns">
                 <div className="column is-5">
                   <figure className="image is-5by4">
-                    <img src={this.props.render(this.props.shape.toLowerCase(), this.state.color)}></img>
+                    <img src={require(`../images/${this.state.color}_${this.props.shape.toLowerCase()}_candle.jpg`)}></img>
                   </figure>
                 </div>
                 <div className="column">

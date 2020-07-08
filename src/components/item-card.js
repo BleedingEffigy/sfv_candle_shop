@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import { connect } from "react-redux"
 import {changeCandleColor} from "../js/actions/index"
-import {renderImage} from "../js/utils"
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -32,7 +31,7 @@ class ConnectedItemCard extends React.Component{
         <Link to={"/detail/"+this.props.shape+"-candle"}>
           <div className="card-image">
             <figure className="image is-5by4">
-              <img src={renderImage(this.props.shape, this.props.color)}></img>
+              <img src={require(`../images/${this.props.color}_${this.props.shape}_candle.jpg`)}></img>
             </figure>
           </div>
         </Link>
