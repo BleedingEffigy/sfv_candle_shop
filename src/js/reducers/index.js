@@ -3,9 +3,9 @@ import {CHANGE_CANDLE_COLOR, ADD_TO_CART, REMOVE_FROM_CART} from "../actions/ind
 const initialState = {
   candle_colors: {
     "one": {"shape":"square","color":"red"},
-    "two": {"shape":"etched-stripes","color":"violet"},
+    "two": {"shape":"oval","color":"violet"},
     "three": {"shape":"pyramid","color":"yellow"},
-    "four": {"shape":"round","color":"green"},
+    "four": {"shape":"round","color":"blue"},
     "five": {"shape":"square","color":"blue"},
   },
   cart: {}

@@ -9,8 +9,8 @@ import Layout from "../../components/layout"
 const SquareCandlePage = () => (
   <Layout>
     <CandleDetail render={renderImage}
-                  shape={"Etched-Stripes"}
-                  description={"A striped pillar that is 10in in height and 4in in width"}/>
+                  shape={"Oval"}
+                  description={"An oval pillar that is 10in in height and 4in in width"}/>
   </Layout>
 )
 
