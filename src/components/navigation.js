@@ -34,7 +34,7 @@ class Navigation extends React.Component {
               <Link to="/candles" className="navbar-item has-text-white">Shop</Link>
 
             <a className="navbar-item has-text-white">
-              Contact
+              <Link to="/contact" className="navbar-item has-text-white">Contact</Link>
             </a>
           </div>
 
