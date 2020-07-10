@@ -19,7 +19,7 @@ class Navigation extends React.Component {
       <nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <p className="title logo has-text-white">SFV CANDLES</p>
+            <p className="title has-text-white">SFV CANDLES</p>
           </Link>
 
           <a role="button" className="navbar-burger burger" onClick={this.hamburgerClick} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
