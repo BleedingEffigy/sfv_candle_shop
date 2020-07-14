@@ -62,7 +62,7 @@ const handleRemoveFromCartClick = (item) => {
               </div>
             : <div className="columns">
                 <div className="column is-8">
-                  <table className="table">
+                  <table className="table is-fullwidth">
                     <thead>
                       <tr>
                         <th></th>
