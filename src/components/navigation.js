@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FaShoppingCart } from "react-icons/fa";
 
 class Navigation extends React.Component {
   constructor(props){
@@ -7,47 +8,38 @@ class Navigation extends React.Component {
     this.state = {
       active: false,
     }
-    this.hamburgerClick = this.hamburgerClick.bind(this)
-  }
-
-  hamburgerClick(){
-    this.setState({active: !this.state.active})
   }
 
   render () {
-    return (
-      <nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <Link className="navbar-item" to="/">
-            <p className="title has-text-white">SFV CANDLES</p>
-          </Link>
-
-          <a role="button" className="navbar-burger burger" onClick={this.hamburgerClick} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" className={`navbar-menu has-background-grey-darker ${this.state.active ? "is-active": ""}`}>
-          <div className="navbar-start">
-              <Link to="/candles" className="navbar-item has-text-white">Shop</Link>
-
-            <a className="navbar-item has-text-white">
-              <Link to="/contact" className="navbar-item has-text-white">Contact</Link>
-            </a>
-          </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                  <Link to="/cart" className="button is-primary has-text-white">Cart</Link>
-              </div>
+    return(
+        <nav className="flex justify-between w-screen bg-gray-500">
+          <div className="px-5 xl:px-10 py-6 flex w-full items-center">
+            {/* Logo here! */}
+            <Link to="/">
+              <p className="text-4xl font-bold font-heading text-white p-2 nm-gray-flat">SFV CANDLES</p>
+            </Link>
+            {/* <!-- Nav Links --> */}
+            <ul className="flex px-4 mx-auto font-semibold font-heading space-x-12">
+              <li>
+                  <Link to="/candles" className="p-4 hover:text-gray-200 text-2xl text-white nm-gray-flat">Shop</Link>
+              </li>
+            </ul>
+            {/* <!-- Header Icons --> */}
+            <div className="flex items-center space-x-5">
+              <Link className="flex items-center p-3 nm-gray-flat hover:text-gray-200 " to="/cart">
+                  <span className="h-9 w-9">
+                    <FaShoppingCart size={32}/>
+                  </span>
+                <span className="flex absolute -mt-7 ml-6">
+                  <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                    </span>
+                  </span>
+              </Link>
             </div>
           </div>
-        </div>
-      </nav>
-    )
+        </nav>
+    ) 
   }
 }
 

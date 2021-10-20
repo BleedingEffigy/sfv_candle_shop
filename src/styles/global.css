@@ -12,7 +12,7 @@
     .nm-gray-flat{
         border-radius: 6px;
         background: linear-gradient(145deg, #7a8381, #676e6d);
-        box-shadow:  15px 15px 30px #636a69,
-             -15px -15px 30px #818a89;
+        box-shadow:  15px 15px 30px #606666,
+             -15px -15px 30px #848e8c;
     }
 }
