@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .nm-pink-flat {
+        border-radius: 50px;
+        background: #BFA2DB;
+        box-shadow:  20px 20px 60px #a28aba,
+             -20px -20px 60px #dcbafc;
+    }
+    .nm-gray-flat{
+        border-radius: 6px;
+        background: linear-gradient(145deg, #7a8381, #676e6d);
+        box-shadow:  15px 15px 30px #636a69,
+             -15px -15px 30px #818a89;
+    }
+}
