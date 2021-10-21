@@ -11,8 +11,8 @@ const CandlePage = () => (
   <Layout>
     <Navigation/>
     <ShopBanner/>
-    <div className="columns is-centered">
-      <div className="column is-10">
+    <div className="flex justify-center">
+      <div className="w-5/6">
         <Items/>
       </div>
     </div>
