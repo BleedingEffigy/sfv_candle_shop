@@ -29,33 +29,31 @@ class ConnectedItemCard extends React.Component{
     return (
       <div className="bg-gray-200 m-5">
         <Link to={"/detail/"+this.props.shape+"-candle"}>
-          <div className="">
             <figure className="">
               <img src={require(`../images/${this.props.color}_${this.props.shape}_candle.jpg`)}
                     className="w-full"></img>
             </figure>
-          </div>
         </Link>
-        <div className="card-content">
+        <div className="">
           <p>10in {this.props.shape} candle</p>
-          <div className="field is-grouped">
-            <p className="control">
-              <button className="button is-rounded is-small"
+          <div className="flex">
+            <p className="mx-1">
+              <button className="p-4 rounded-full "
                 style={{backgroundColor: "#bf0e44"}}
                 onClick={this.handleColorClick.bind(this, this.props, this.props.index, "red")}></button>
             </p>
-            <p className="control">
-              <button className="button is-rounded is-small"
+            <p className="mx-1">
+              <button className="p-4 rounded-full "
                 style={{backgroundColor: "#b74bdd"}}
                 onClick={this.handleColorClick.bind(this, this.props, this.props.index, "violet")}></button>
             </p>
-            <p className="control">
-              <button className="button is-rounded is-small"
+            <p className="mx-1">
+              <button className="p-4 rounded-full "
                 style={{backgroundColor: "#223ed2"}}
                 onClick={this.handleColorClick.bind(this, this.props, this.props.index, "blue")}></button>
             </p>
-            <p className="control">
-              <button className="button is-rounded is-small"
+            <p className="mx-1">
+              <button className="p-4 rounded-full "
                 style={{backgroundColor: "#ebe958"}}
                 onClick={this.handleColorClick.bind(this, this.props, this.props.index, "yellow")}></button>
             </p>
