@@ -8,9 +8,9 @@ const select = state => {
 }
 
 const ConnectedItemList  = ({candle_colors}) => (
-  <div className="columns is-multiline">
+  <div className="flex flex-wrap justify-around">
     {Object.entries(candle_colors).map(([key, item]) =>
-      <div className="column is-4" key={key}><ItemCard shape={item.shape} color={item.color} index={key}/></div>
+      <div className="w-1/3" key={key}><ItemCard shape={item.shape} color={item.color} index={key}/></div>
     )}
   </div>
 )
