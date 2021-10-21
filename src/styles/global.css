@@ -9,6 +9,12 @@
         box-shadow:  20px 20px 60px #a28aba,
              -20px -20px 60px #dcbafc;
     }
+    .nm-gray-200-flat {
+        border-radius: 26px;
+background: #e5e7eb;
+box-shadow:  32px 32px 64px #a9abae,
+             -32px -32px 64px #ffffff;
+    }
     .nm-gray-flat{
         border-radius: 6px;
         background: linear-gradient(145deg, #7a8381, #676e6d);

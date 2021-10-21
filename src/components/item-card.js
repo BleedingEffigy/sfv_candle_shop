@@ -27,7 +27,7 @@ class ConnectedItemCard extends React.Component{
 
   render(){
     return (
-      <div className="bg-gray-200 m-5">
+      <div className="m-2 nm-gray-200-flat p-5">
         <Link to={"/detail/"+this.props.shape+"-candle"}>
             <figure className="">
               <img src={require(`../images/${this.props.color}_${this.props.shape}_candle.jpg`)}
@@ -35,7 +35,7 @@ class ConnectedItemCard extends React.Component{
             </figure>
         </Link>
         <div className="">
-          <p>10in {this.props.shape} candle</p>
+          <p className="font-bold" >10in {this.props.shape} candle</p>
           <div className="flex">
             <p className="mx-1">
               <button className="p-4 rounded-full "
