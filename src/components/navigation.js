@@ -15,9 +15,12 @@ class Navigation extends React.Component {
         <nav className="flex justify-between w-screen bg-gray-500">
           <div className="px-5 xl:px-10 py-6 flex w-full items-center">
             {/* Logo here! */}
+            <div className="p-2 nm-gray-flat">
             <Link to="/">
-              <p className="text-4xl font-bold font-heading text-white p-2 nm-gray-flat">SFV CANDLES</p>
+              <p className="text-4xl font-bold font-heading bg-clip-text text-transparent 
+                            bg-gradient-to-r from-yellow-100 to-pink-200 filter hover:brightness-125">SFV CANDLES</p>
             </Link>
+            </div>
             {/* <!-- Nav Links --> */}
             <ul className="flex px-4 mx-auto font-semibold font-heading space-x-12">
               <li>
