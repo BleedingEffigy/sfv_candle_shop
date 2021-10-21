@@ -27,11 +27,12 @@ class ConnectedItemCard extends React.Component{
 
   render(){
     return (
-      <div className="card has-background-white-bis">
+      <div className="bg-gray-200 m-5">
         <Link to={"/detail/"+this.props.shape+"-candle"}>
-          <div className="card-image">
-            <figure className="image is-5by4">
-              <img src={require(`../images/${this.props.color}_${this.props.shape}_candle.jpg`)}></img>
+          <div className="">
+            <figure className="">
+              <img src={require(`../images/${this.props.color}_${this.props.shape}_candle.jpg`)}
+                    className="w-full"></img>
             </figure>
           </div>
         </Link>
@@ -59,7 +60,7 @@ class ConnectedItemCard extends React.Component{
                 onClick={this.handleColorClick.bind(this, this.props, this.props.index, "yellow")}></button>
             </p>
           </div>
-          <p className="has-text-weight-bold">$10.99</p>
+          <p className="font-bold">$10.99</p>
         </div>
       </div>
     )
