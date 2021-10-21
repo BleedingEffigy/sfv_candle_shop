@@ -11,7 +11,7 @@ const CandlePage = () => (
   <Layout>
     <Navigation/>
     <ShopBanner/>
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-purple-200">
       <div className="w-5/6">
         <Items/>
       </div>
