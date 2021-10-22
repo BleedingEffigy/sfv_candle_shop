@@ -34,7 +34,7 @@ const Landing = () => (
       		</div>
 		</div>
 
-		<div className="flex flex-col">
+		<div className="sm:hidden flex flex-col">
 			<div>
 				<img src={require("../images/Landing_Candles.png")}
 					 className="object-scale-down"></img>
