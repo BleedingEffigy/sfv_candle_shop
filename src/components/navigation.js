@@ -17,14 +17,14 @@ class Navigation extends React.Component {
             {/* Logo here! */}
             <div className="p-2 nm-gray-flat">
             <Link to="/">
-              <p className="text-4xl font-bold font-heading bg-clip-text text-transparent 
+              <p className="text-xl sm:text-4xl font-bold font-heading bg-clip-text text-transparent 
                             bg-gradient-to-r from-yellow-100 to-pink-200 filter hover:brightness-125">SFV CANDLES</p>
             </Link>
             </div>
             {/* <!-- Nav Links --> */}
             <ul className="flex px-4 mx-auto font-semibold font-heading space-x-12">
               <li>
-                  <Link to="/candles" className="p-4 text-2xl nm-gray-flat ">
+                  <Link to="/candles" className="p-4 text-xl sm:text-2xl nm-gray-flat ">
                     <span className="bg-clip-text text-transparent 
                             bg-gradient-to-r from-yellow-100 to-pink-200 filter hover:brightness-125">
                       Shop
