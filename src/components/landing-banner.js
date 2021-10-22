@@ -13,14 +13,24 @@ const Landing = () => (
 					 className="object-scale-down"></img>
 			</div>
 			<div className="col-span-3 nm-pink-flat p-5">
-				<h2 className="title is-2 has-text-dark">Made right in the SFV</h2>
-				<p>All our free standing candles are made in our home in the beautiful San Fernando Valley</p>
+				<h2 className="text-5xl font-bold">Made right in the SFV</h2>
+				<p className="text-2xl">All our free standing candles are made in our home in the beautiful San Fernando Valley</p>
 			</div>
 			<div className="col-start-4 col-span-2 text-center">
 			<Link to="/candles">
-				<button className="nm-pink-flat text-white hover:text-gray-300 w-full text-3xl rounded p-2 mt-4">Browse</button>
+				<button className="nm-pink-flat text-white hover:text-gray-300 w-full text-3xl rounded p-2 mt-4 ">
+					<span className="bg-clip-text text-transparent 
+                            bg-gradient-to-r from-yellow-100 to-pink-200 filter hover:brightness-125">
+						Browse
+					</span>
+				</button>
 			</Link>
-			<div className='col-start-4 col-span-2 text-center text-white text-3xl mt-4 nm-pink-flat'>Contact us below!</div>
+			<div className='col-start-4 col-span-2 text-center text-white text-3xl mt-4 nm-pink-flat'>
+				<span className="bg-clip-text text-transparent 
+                            bg-gradient-to-r from-yellow-100 to-pink-200 filter hover:brightness-125">
+					Contact us below!
+				</span>
+			</div>
       	</div>
 		</div>
 

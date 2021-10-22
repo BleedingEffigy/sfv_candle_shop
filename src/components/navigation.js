@@ -24,7 +24,12 @@ class Navigation extends React.Component {
             {/* <!-- Nav Links --> */}
             <ul className="flex px-4 mx-auto font-semibold font-heading space-x-12">
               <li>
-                  <Link to="/candles" className="p-4 hover:text-gray-200 text-2xl text-white nm-gray-flat">Shop</Link>
+                  <Link to="/candles" className="p-4 text-2xl nm-gray-flat ">
+                    <span className="bg-clip-text text-transparent 
+                            bg-gradient-to-r from-yellow-100 to-pink-200 filter hover:brightness-125">
+                      Shop
+                    </span>
+                    </Link>
               </li>
             </ul>
             {/* <!-- Header Icons --> */}
