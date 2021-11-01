@@ -1,99 +1,210 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
+
+
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/BleedingEffigy/sfv_candle_shop">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<h3 align="center">SFV Candle Shop</h3>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+  <p align="center">
+    a static commerce site made for my mom to sell her candles.
+    <br />
+    <a href="https://github.com/BleedingEffigy/sfv_candle_shop"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/BleedingEffigy/sfv_candle_shop">View Demo</a>
+    ·
+    <a href="https://github.com/BleedingEffigy/sfv_candle_shop/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/BleedingEffigy/sfv_candle_shop/issues">Request Feature</a>
+  </p>
+</div>
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
 
-1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-1.  **Open the source code and start editing!**
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-    Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+### Built With
 
-## 🧐 What's inside?
+* [React.js](https://reactjs.org/)
+* [Gatsby](https://www.gatsbyjs.com/)
+* [react-icons](https://react-icons.github.io/react-icons/)
+* [Bulma](https://bulma.io/)
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+<!-- GETTING STARTED -->
+## Getting Started
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+### Prerequisites
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+### Installation
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/BleedingEffigy/sfv_candle_shop.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the server
+   ```sh
+   yarn run dev
+   ```
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+<!-- USAGE EXAMPLES -->
+## Usage
 
-## 🎓 Learning Gatsby
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+<!-- ROADMAP -->
+## Roadmap
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+- Finish adding SoftUI to all the pages
+- Setup payment
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+See the [open issues](https://github.com/BleedingEffigy/sfv_candle_shop/issues) for a full list of proposed features (and known issues).
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Alex Hernandez - [@bleedingeffigy](https://twitter.com/bleedingeffigy) - ahern077@gmail.com.com
+
+Project Link: [https://github.com/BleedingEffigy/sfv_candle_shop](https://github.com/BleedingEffigy/sfv_candle_shop)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/BleedingEffigy/sfv_candle_shop.svg?style=for-the-badge
+[contributors-url]: https://github.com/BleedingEffigy/sfv_candle_shop/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/BleedingEffigy/sfv_candle_shop.svg?style=for-the-badge
+[forks-url]: https://github.com/BleedingEffigy/sfv_candle_shop/network/members
+[stars-shield]: https://img.shields.io/github/stars/BleedingEffigy/sfv_candle_shop.svg?style=for-the-badge
+[stars-url]: https://github.com/BleedingEffigy/sfv_candle_shop/stargazers
+[issues-shield]: https://img.shields.io/github/issues/BleedingEffigy/sfv_candle_shop.svg?style=for-the-badge
+[issues-url]: https://github.com/BleedingEffigy/sfv_candle_shop/issues
+[license-shield]: https://img.shields.io/github/license/BleedingEffigy/sfv_candle_shop.svg?style=for-the-badge
+[license-url]: https://github.com/BleedingEffigy/sfv_candle_shop/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/alex-hernandez-cloud-dev
+[product-screenshot]: https://rosamint.org/images/CandleShop.webp
