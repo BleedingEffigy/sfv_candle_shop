@@ -41,7 +41,7 @@
     <a href="https://github.com/BleedingEffigy/sfv_candle_shop"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/BleedingEffigy/sfv_candle_shop">View Demo</a>
+    <a href="https://sfv-candles.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/BleedingEffigy/sfv_candle_shop/issues">Report Bug</a>
     ·
@@ -82,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://sfv-candles.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
